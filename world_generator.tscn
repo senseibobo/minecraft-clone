@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://b034pof1v05xc"]
+
+[ext_resource type="Script" path="res://world_generator.gd" id="1_arfc4"]
+[ext_resource type="Script" path="res://free_camera.gd" id="2_207ku"]
+[ext_resource type="Texture2D" uid="uid://dse5dxd35vd7x" path="res://icon.svg" id="3_ie02e"]
+
+[node name="WorldGenerator" type="Node3D"]
+script = ExtResource("1_arfc4")
+
+[node name="FreeCamera" type="Node3D" parent="."]
+script = ExtResource("2_207ku")
+
+[node name="Camera3D" type="Camera3D" parent="FreeCamera"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.142796, 0, 0, 0, 1, 0.671616, 1.37064, 0)
+texture = ExtResource("3_ie02e")
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform3D(-4.37114e-08, -0.142796, 0, 1, -6.2418e-09, 0, 0, 0, 1, 0.0530238, 2.03583, 0)
+texture = ExtResource("3_ie02e")
+
+[node name="Sprite3D3" type="Sprite3D" parent="."]
+transform = Transform3D(-4.37114e-08, -0.142796, 0, -4.37114e-08, 2.72838e-16, -1, 1, -6.2418e-09, -4.37114e-08, 0.0530238, 1.38781, 0.641194)
+texture = ExtResource("3_ie02e")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
